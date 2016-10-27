@@ -30,7 +30,7 @@
 *.iml
 *.ipr
 *.lst
-*/target/*
+*/target/**
 
 # MEDIA #
 ######################
