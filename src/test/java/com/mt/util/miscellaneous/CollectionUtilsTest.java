@@ -32,7 +32,7 @@ public final class CollectionUtilsTest {
     public void test_is_same() {
         assertTrue("same", collectionUtils.isSame(Arrays.asList(3, 2, 1), Arrays.asList(1, 2, 3)));
         assertTrue("same", collectionUtils.isSame(Arrays.asList(30, 20, 10), Arrays.asList(10, 20, 30)));
-        assertFalse("same", collectionUtils.isSame(Arrays.asList(3, 2, 1), Arrays.asList(2, 3)));
-        assertFalse("same", collectionUtils.isSame(Arrays.asList(3, 2), Arrays.asList(1, 2, 3)));
+        assertFalse("not same", collectionUtils.isSame(Arrays.asList(3, 2, 1), Arrays.asList(2, 3)));
+        assertFalse("not same", collectionUtils.isSame(Arrays.asList(3, 2), Arrays.asList(1, 2, 3)));
     }
 }
